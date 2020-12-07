@@ -14,6 +14,8 @@ const setBodyHeight = () => {
   document.body.style.height = scrollVariables.height + "px";
 };
 
+setBodyHeight();
+
 window.addEventListener("scroll", function () {
   function setTransform(el, transform) {
     el.style.transform = transform;
