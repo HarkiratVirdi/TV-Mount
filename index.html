@@ -3,26 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/099fd84ce2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./sass/main.css" />
     <title>TV Mount | GTA Toronto</title>
   </head>
 
   <body>
     <header>
-      <nav>
-        <div class="left-menu">
-          <div class="dropdown_menu">
-            <ul class="left hide">
-              <li class="left-link"><a href="">Home</a></li>
-              <li class="left-link"><a href="">Services</a></li>
-              <li class="left-link"><a href="">About</a></li>
-              <li class="left-link"><a href="">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-        <ul class="right">
-          <div class="logo"><a href="#">TV Mounters</a></div>
-          <li class="link btn"><a href="#Contact">Contact</a></li>
+      <nav class="navbar">
+        <span class="navbar__toggle" id="js-navbar-toggle">
+          <i class="fas fa-bars"></i>
+        </span>
+        <a href="#" class="navbar__logo">Perfect Mount</a>
+        <ul class="navbar__list" id="js-menu">
+          <li>
+            <a href="#" class="navbar__links">Home</a>
+          </li>
+          <li>
+            <a href="#" class="navbar__links">Services</a>
+          </li>
+          <li>
+            <a href="#" class="navbar__links">Works</a>
+          </li>
+          <!-- <li>
+            <a href="#" class="navbar__links">About Us</a>
+          </li> -->
+          <li>
+            <a href="#" class="navbar__links cta-btn cta-btn--white">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -31,33 +43,61 @@
       <main>
         <section id="Home">
           <div class="hero">
-            <h1>We Mount TV's</h1>
-            <img src="./tv Mount/pexels-houzlook-com-3423817-edit.jpg" alt="" />
+            <h1 class="hero__heading heading-2 heading-2--white">
+              We Mount TV's
+            </h1>
+            <img
+              class="hero__image"
+              src="./tv Mount/pexels-houzlook-com-3423817-edit.jpg"
+              alt=""
+            />
           </div>
         </section>
 
         <section id="Services">
           <div class="container">
-            <h1 class="golden heading">Services</h1>
+            <h1 class="services__heading mb-m heading-2 heading-2--gold">
+              Services
+            </h1>
 
-            <div class="services_col">
-              <div class="row">
-                <div class="col">
-                  <div class="col_img">
-                    <img
-                      src="./tv Mount/dennis-brekke-Z0tB7Rr4xx4-unsplash.jpg"
-                      alt=""
-                    />
-                    <div class="col_text">Cabling</div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="col_img">
-                    <img
+            <div class="services">
+            
+      <div class="services__grid__row">
+        <figure class="services__grid__item">
+          <img
+            src="./tv Mount/dennis-brekke-Z0tB7Rr4xx4-unsplash.jpg"
+            alt=""
+          />
+          <div class="services__text__1">Cabling</div>
+        </figure>
+
+        <figure class="services__grid__item">
+           <img
                       src="./tv Mount/eugen-str-4sZmaAzPq8M-unsplash.jpg"
                       alt=""
                     />
-                    <div class="col_text">Drilling</div>
+                    <div class="services__text__2">Drilling</div>
+        </figure>
+        <figure class="services__grid__item">
+           <img
+                       <img src="./tv Mount/tvmount.jpg" alt="" />
+                    <div class="services__text__3">TV Mount</div>
+        </figure>
+        <figure class="services__grid__item">
+           <img
+                      src="./tv Mount/william-warby-WahfNoqbYnM-unsplash.jpg"
+                      alt=""
+                    />
+                    <div class="services__text__4">Measurement</div>
+        </figure>
+
+   
+    </div>
+                  
+                 
+                <div class="col">
+                  <div class="col_img">
+                   
                   </div>
                 </div>
               </div>
@@ -65,22 +105,17 @@
               <div class="row">
                 <div class="col">
                   <div class="col_img">
-                    <img src="./tv Mount/tvmount.jpg" alt="" />
-                    <div class="col_text">TV Mount</div>
+                  
                   </div>
                 </div>
                 <div class="col">
                   <div class="col_img">
-                    <img
-                      src="./tv Mount/william-warby-WahfNoqbYnM-unsplash.jpg"
-                      alt=""
-                    />
-                    <div class="col_text">Measurement</div>
+                   
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
+         
+         
         </section>
 
         <section id="About">
@@ -98,13 +133,84 @@
           </div>
         </section>
 
-        <section id="Clients">
+        <section id="Works">
           <div class="container">
-            <div class="golden heading">Clients</div>
+            <div class="golden heading">Works</div>
+             <div class="carousel">
+            <div class="slide__arrows">
+              <div class="slide__arrow--left slide__arrow"></div>
+              <div class="slide__arrow--right slide__arrow"></div>
+            </div>
+            <div class="carousel__slides">
+              <article class="slide slide__active">
+                <div class="slide__img">
+                  <img
+                    src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    alt=""
+                  />
+                </div>
+                 <div class="slide__text">
+                  <p>Watch Awesome Movies</p>
+                </div> 
+        
+              </article>
+
+              <article class="slide">
+                <div class="slide__img">
+                  <img
+                    src="https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80"
+                    alt=""
+                  />
+                </div>
+                <div class="slide__text">
+                  <p>Experience the movie like never before</p>
+                </div>
+              </article>
+
+              <article class="slide">
+                <div class="slide__img">
+                  <img
+                    src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    alt=""
+                  />
+                </div>
+                <div class="slide__text">
+                  <p>Watch movie in Theatre near you</p>
+                </div>
+              </article>
+
+              <article class="slide">
+                <div class="slide__img">
+                  <img
+                    src="https://images.unsplash.com/photo-1485846234645-a62644f84728?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1340&q=80"
+                    alt=""
+                  />
+                </div>
+                <div class="slide__text">
+                  <p>Amazingly shot and directed</p>
+                </div>
+              </article>
+
+              <article class="slide">
+                <div class="slide__img">
+                  <img
+                    src="https://images.unsplash.com/photo-1485095329183-d0797cdc5676?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    alt=""
+                  />
+                </div>
+                <div class="slide__text">
+                  <p>Enjoy with Friends</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
           </div>
         </section>
       </main>
     </div>
+     </div>
+        </div>
     <script src="./app.js"></script>
   </body>
 </html>

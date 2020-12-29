@@ -1,0 +1,28 @@
+.services{
+    &__grid__row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+    &__grid__item{
+        
+        width: 35vw;
+//   flex-basis: 20%;
+-ms-flex: auto;
+position: relative;
+  padding: 2vw;
+  box-sizing: border-box;
+  
+  img{
+      //   height: 100%;
+      width: 100%;
+      height: 25vw;
+      object-fit: cover;
+  }
+
+}
+
+
+
+}

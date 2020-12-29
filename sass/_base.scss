@@ -1,0 +1,74 @@
+// @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+// // @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,800;1,400&display=swap');
+
+
+// @import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+
+$font-primary: 'Lato', sans-serif;
+
+
+$color-primary: rgb(243, 243, 243);
+$color-secondary: #000000;
+$color-tertiary: #a4754a;
+
+$tablet-breakpoint: 900px;
+$mobile-breakpoint: 600px;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+::selection{
+    background-color: #b3b2b1;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+
+   
+    @media only screen and (max-width: $mobile-breakpoint) {
+        font-size: 50%;
+    }
+}
+
+body {
+    font-family: $font-primary;
+    color: $color-secondary;
+    font-weight: 300;
+    line-height: 1.6;
+    background-color: $color-primary;
+    -webkit-tap-highlight-color: transparent;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+section{
+    margin-bottom: 6vw;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow:hidden;
+
+       
+    @media only screen and (max-width: $tablet-breakpoint) {
+        width: 95%;
+    }
+}
+
+img{width: 100%;
+object-fit: cover;}

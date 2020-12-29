@@ -12,7 +12,7 @@ body{
 }
 
 .full_container{
-    position: fixed;
+
     width: 100%;
 }
 
@@ -141,13 +141,9 @@ main{
 
 #Services{
     display: block;
-    
     width: 100%;
     margin-bottom: -1rem;
 }
-
-
-
 
 .golden{
     color: #745236;
