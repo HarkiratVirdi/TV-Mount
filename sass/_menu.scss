@@ -29,12 +29,13 @@
   }
 
   &__logo {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    display: inline-block;
-    font-size: 22px;
-    margin-top: 10px;
-    margin-left: 20px;
+    width: 12rem;
+    margin-left: 2rem;
+
+    img {
+      margin-top: 1rem;
+      width: 10rem;
+    }
   }
 
   &__links {
@@ -76,12 +77,7 @@
     }
 
     &__logo {
-      margin-top: 1rem;
       width: 12rem;
-
-      img {
-        object-fit: cover;
-      }
     }
 
     &__logo:hover,

@@ -1,0 +1,32 @@
+.follow {
+  width: 100%;
+  height: 50rem;
+  position: relative;
+  &__image {
+    background: url("../tv Mount/Contact.jpg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    top: 0;
+  }
+
+  &__image::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+  }
+
+  &__content {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    z-index: 500;
+  }
+}

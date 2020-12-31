@@ -27,7 +27,7 @@
 .heading-2 {
   @extend %heading;
   font-size: 5rem;
-  width: 100%;
+  //   width: 100%;
   text-transform: capitalize;
   @include color-text;
 }

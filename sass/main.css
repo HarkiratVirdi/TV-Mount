@@ -65,12 +65,6 @@ section {
   }
 }
 
-img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .mt-s {
   margin-top: 1vw;
 }
@@ -138,7 +132,6 @@ img {
 
 .heading-2 {
   font-size: 5rem;
-  width: 100%;
   text-transform: capitalize;
 }
 
@@ -277,12 +270,13 @@ img {
 }
 
 .navbar__logo {
-  text-decoration: none;
-  color: white;
-  display: inline-block;
-  font-size: 22px;
-  margin-top: 10px;
-  margin-left: 20px;
+  width: 12rem;
+  margin-left: 2rem;
+}
+
+.navbar__logo img {
+  margin-top: 1rem;
+  width: 10rem;
 }
 
 .navbar__links {
@@ -332,12 +326,7 @@ img {
     margin-left: 40px;
   }
   .navbar__logo {
-    margin-top: 1rem;
     width: 12rem;
-  }
-  .navbar__logo img {
-    -o-object-fit: cover;
-       object-fit: cover;
   }
   .navbar__logo:hover, .navbar__links:hover {
     color: #c1c1c1;
@@ -419,6 +408,42 @@ main {
 .services__grid__item img {
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
+}
+
+.follow {
+  width: 100%;
+  height: 50rem;
+  position: relative;
+}
+
+.follow__image {
+  background: url("../tv Mount/Contact.jpg");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  top: 0;
+}
+
+.follow__image::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+}
+
+.follow__content {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  z-index: 500;
 }
 
 #Works {
