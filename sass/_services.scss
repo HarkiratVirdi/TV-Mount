@@ -1,28 +1,22 @@
-.services{
-    &__grid__row {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
+#Services {
+  padding-top: 5rem;
 }
 
-    &__grid__item{
-        
-        width: 35vw;
-//   flex-basis: 20%;
--ms-flex: auto;
-position: relative;
-  padding: 2vw;
-  box-sizing: border-box;
-  
-  img{
-      //   height: 100%;
-      width: 100%;
-      height: 25vw;
-      object-fit: cover;
+.services {
+  &__grid__row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    grid-row-gap: 2vw;
+    grid-column-gap: 4vw;
   }
 
-}
+  &__grid__item {
+    width: 100%;
+    img {
+      object-fit: cover;
+    }
+  }
 
-
-
+  &__text {
+  }
 }

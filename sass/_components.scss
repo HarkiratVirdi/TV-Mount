@@ -1,16 +1,17 @@
-.cta-btn{
-    border: none;
-    outline: 0;
-    padding: 1rem 3rem;
-    transition: all 0.35s;
+.cta-btn {
+  border: none;
+  outline: 0;
+  padding: 1rem 3rem;
+  border-radius: 0.3rem;
+  transition: all 0.35s;
 
-    &--white{
-        background-color: white;
-        color: black !important;
-    }
+  &--white {
+    background-color: white;
+    color: black !important;
+  }
 
-    &--black{
-        background-color: black;
-        color: white !important;
-    }
+  &--black {
+    background-color: black;
+    color: white !important;
+  }
 }

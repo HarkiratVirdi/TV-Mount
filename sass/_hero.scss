@@ -6,12 +6,18 @@ main{
 .hero{   
         position: relative;
         top: 0;
-        height: 93vh;
+        height: 100vh;
+        background: url('../tv Mount/Hero_image_final.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        // background-attachment: fixed;
 
     &__heading{
         position: absolute;
         left: 50%;
         top: 50%;
+        text-align: center;
         transform: translate(-50%, -50%);
     }
 
