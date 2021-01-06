@@ -798,6 +798,10 @@ main {
   }
 }
 
+.footer .instagram {
+  color: white;
+}
+
 .footer__link {
   text-decoration: none;
   color: #fff;
