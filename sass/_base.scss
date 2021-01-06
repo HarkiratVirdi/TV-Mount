@@ -15,15 +15,17 @@ $color-primary: rgb(243, 243, 243);
 $color-secondary: #000000;
 $color-tertiary: #a4754a;
 
-$tablet-breakpoint: 900px;
-$mobile-breakpoint: 600px;
-
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  -webkit-tap-highlight-color: transparent;
+  text-rendering: optimizeSpeed;
+  font-kerning: none;
+  border-collapse: inherit;
+  outline: none;
 }
 
 ::selection {
@@ -35,11 +37,11 @@ html {
   font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
   scroll-behavior: smooth;
 
-  @media only screen and (max-width: $tablet-breakpoint) {
+  @media only screen and (max-width: 900px) {
     font-size: 50%;
   }
 
-  @media only screen and (max-width: $tablet-breakpoint) {
+  @media only screen and (max-width: 600px) {
     font-size: 45%;
   }
 }
@@ -50,11 +52,23 @@ body {
   font-weight: 300;
   line-height: 1.6;
   background-color: #fff;
-  -webkit-tap-highlight-color: transparent;
 }
 
 a {
   text-decoration: none;
+  color: $color-secondary;
+}
+
+.full_container {
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+
+  @media only screen and (max-width: 900px) {
+    position: relative;
+    top: 0;
+  }
 }
 
 section {
@@ -65,8 +79,9 @@ section {
   width: 80%;
   margin: auto;
   overflow: hidden;
+  height: inherit;
 
-  @media only screen and (max-width: $tablet-breakpoint) {
+  @media only screen and (max-width: 900px) {
     width: 95%;
   }
 }
