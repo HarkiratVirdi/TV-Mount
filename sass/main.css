@@ -73,6 +73,12 @@ section {
   margin-bottom: 6vw;
 }
 
+@media screen and (max-width: 768px) {
+  section {
+    margin-bottom: 8rem;
+  }
+}
+
 .container {
   width: 80%;
   margin: auto;
@@ -112,6 +118,12 @@ section {
 
 .ml-m {
   margin-left: 1.5vw;
+}
+
+@media screen and (max-width: 500px) {
+  .w-100 {
+    width: 100%;
+  }
 }
 
 .cta-btn {
@@ -486,12 +498,7 @@ nav .nav-column .nav-infos .nav-info li {
 @media screen and (max-width: 768px) {
   nav .nav-column .nav-infos .nav-info li {
     margin-bottom: 1.2rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  nav .nav-column .nav-infos .nav-info li {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 

@@ -85,11 +85,10 @@ nav {
           list-style: none;
           font-size: 1.4rem;
           margin-bottom: 1.2rem;
+
           @media screen and (max-width: 768px) {
             margin-bottom: 1.2rem;
-          }
-          @media screen and (max-width: 768px) {
-            font-size: 2.5rem;
+            font-size: 2rem;
           }
           a {
             text-decoration: none;

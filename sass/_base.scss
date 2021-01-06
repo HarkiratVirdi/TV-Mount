@@ -73,6 +73,10 @@ a {
 
 section {
   margin-bottom: 6vw;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 8rem;
+  }
 }
 
 .container {
